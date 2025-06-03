@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wiki Wow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="wiki.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="topbar d-flex justify-content-between align-items-center px-3">
+  <!-- Logo y Título -->
+  <div class="d-flex align-items-center">
+    <img src="imgwiki/wikipedia_logo.png" alt="Logo" style="height: 40px;" class="me-2" />
+    <h1 class="h4 m-0 text-white">Wiki Class</h1>
+  </div>
+
+  <!-- Enlace a la derecha -->
+  <div>
+    <a href="#" class="text-white text-decoration-none me-3">Aula Digital</a>
+  </div>
+</div>
+
+
+  <div class="main-wrapper">
+   
+    <nav class="sidebar border-end">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#Tesis">* Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#evaluacion">* riterios de evaluación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cadenas">* Cadenas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#conclucion">* conclucion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cuadro">* cuadro</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="Tesis" class="content">
+      <h1>Tesis: Evaluación del sabor y textura de las papas fritas de diferentes cadenas de comida rápida</h1>
+      <h3>Resumen del estudio</h3>
+      <p>Este estudio busca comparar el sabor, la textura y la calidad general de las papas fritas servidas por las principales cadenas de comida rápida. A través de métodos sensoriales y técnicos, se analizaron factores como crocancia, salinidad, aroma, color, tamaño, consistencia interior y aceptación general del consumidor.</p>
+        <H3 id="evaluacion">Criterios de evaluación</H3>
+ <!-- listas de acordeon o no me acuerdo como se llama -->
+
+      <div class="accordion" id="criteriosAccordion">
+  <!--  1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSabor">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSabor" aria-expanded="true" aria-controls="collapseSabor">
+        1 - Sabor
+      </button>
+    </h2>
+    <div id="collapseSabor" class="accordion-collapse collapse show" aria-labelledby="headingSabor" data-bs-parent="#criteriosAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Salinidad</li>
+          <li>Intensidad de la papa</li>
+          <li>Notas de grasa o aceite</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--  2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTextura">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTextura" aria-expanded="false" aria-controls="collapseTextura">
+        2 - Textura
+      </button>
+    </h2>
+    <div id="collapseTextura" class="accordion-collapse collapse" aria-labelledby="headingTextura" data-bs-parent="#criteriosAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Crocancia exterior</li>
+          <li>Suavidad interior</li>
+          <li>Uniformidad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--  3 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingApariencia">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseApariencia" aria-expanded="false" aria-controls="collapseApariencia">
+        3 - Apariencia
+      </button>
+    </h2>
+    <div id="collapseApariencia" class="accordion-collapse collapse" aria-labelledby="headingApariencia" data-bs-parent="#criteriosAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Color dorado</li>
+          <li>Tamaño promedio</li>
+          <li>Presencia de quemaduras o imperfecciones</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4-->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingExperiencia">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperiencia" aria-expanded="false" aria-controls="collapseExperiencia">
+        4 - Experiencia general
+      </button>
+    </h2>
+    <div id="collapseExperiencia" class="accordion-collapse collapse" aria-labelledby="headingExperiencia" data-bs-parent="#criteriosAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Aroma</li>
+          <li>Temperatura al servir</li>
+          <li>Tiempo de conservación (cómo cambian después de 10, 20 y 30 minutos)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--  5 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingPrecio">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrecio" aria-expanded="false" aria-controls="collapsePrecio">
+        5 - Precio y porción
+      </button>
+    </h2>
+    <div id="collapsePrecio" class="accordion-collapse collapse" aria-labelledby="headingPrecio" data-bs-parent="#criteriosAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Costo por porción pequeña/mediana/grande</li>
+          <li>Cantidad en gramos o unidades</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h3 id="cadenas" class="mb-3">Cadenas evaluadas</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="table-dark">
+        <tr id="cuadro">
+          <th>Cadena</th>
+          <th>País de origen</th>
+          <th>Tipo de corte</th>
+          <th>Método de cocción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>McDonald’s</td>
+          <td>EE.UU.</td>
+          <td>Delgadas rectas</td>
+          <td>Pre-fritas y congeladas</td>
+        </tr>
+        <tr>
+          <td>Burger King</td>
+          <td>EE.UU.</td>
+          <td>Medianas rectas</td>
+          <td>Fritas al momento</td>
+        </tr>
+        <tr>
+          <td>Wendy’s</td>
+          <td>EE.UU.</td>
+          <td>Corte natural</td>
+          <td>Fritas con cáscara</td>
+        </tr>
+        <tr>
+          <td>KFC</td>
+          <td>EE.UU.</td>
+          <td>Wedges</td>
+          <td>Fritas empanizadas</td>
+        </tr>
+        <tr>
+          <td>Five Guys</td>
+          <td>EE.UU.</td>
+          <td>Corte casero</td>
+          <td>Fritas en aceite de maní</td>
+        </tr>
+        <tr>
+          <td>Carl’s Jr. / Hardee’s</td>
+          <td>EE.UU.</td>
+          <td>Rizadas (curly)</td>
+          <td>Fritas sazonadas</td>
+        </tr>
+        <tr>
+          <td>Popeyes</td>
+          <td>EE.UU.</td>
+          <td>Cajún fries</td>
+          <td>Fritas especiadas</td>
+          <t>
+  </div>
+
+<div>
+        <h4>Curiosidades</h4>
+        <ul>
+          <li>Costo por porción pequeña/mediana/grande</li>
+          <li>Cantidad en gramos o unidades</li>
+          <li>Las papas tipo “wedges” (KFC) dividieron opiniones: más llenadoras pero menos crocantes.</li>
+          <li>Las curly fries (Carl’s Jr.) destacaron por su sabor sazonado, pero fueron menos populares entre quienes preferían papas simples.</li>
+        </ul>
+
+        <h4 id="conclucion">conclucion</h4>
+        <p>Las papas fritas más populares no necesariamente son las más saludables o naturales, pero sí las que alcanzan el mejor balance entre sabor, textura y presentación. La percepción del consumidor está fuertemente influenciada por la frescura y la temperatura al servir.</p>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

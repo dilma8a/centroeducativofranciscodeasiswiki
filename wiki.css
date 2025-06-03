@@ -1,0 +1,60 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #c8d9e6; /* Cambia por el color que quieras */
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5efeb;
+  padding-top: 1rem;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar .nav-link {
+  color: #2f4156; /* Color del texto de los enlaces */
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.topbar {
+  height: 60px;
+  background-color: #2f4156;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.topbar img {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+
+.accordion-button {
+  background-color: #567c8d; /* color del botón cerrado */
+  color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #c8d9e6; /* color del botón cuando está abierto */
+  color: #000;
+  border-radius: 30px;
+}
